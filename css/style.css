@@ -30,6 +30,21 @@ body {
   box-shadow: 0 0 10px 20px black inset;
   color: beige;
 }
+.name {
+	background: black;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.tagLine {
+	background: black;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#message {
+	background: black;
+	border-radius: 5px 5px 5px 5px;
+}
+
 
 section.board {
 	display: grid;

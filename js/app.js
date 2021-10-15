@@ -57,9 +57,9 @@ function render() {
         
         let cellColor
         if (cell === 1) {
-            cellColor = x
+            cellColor = "black"
         } else if (cell === -1) {
-            cellColor = "purple"
+            cellColor = "orange"
         } else if (cell === null) {
             cellColor = "white"
         }
@@ -70,7 +70,7 @@ function render() {
     if (!winner) {
         message.innerText = `It is ${turn === 1 ? "X" : "O"}'s turn!`
     } else if (winner === "T") {
-        message.innerText = `Cat's game. 🐱 MEOW!!!!`
+        message.innerText = `SHAME!`
     } else {
         message.innerText = `Congratulations ${winner === 1 ? "X" : "O"}!!!!!`
     }   
@@ -112,3 +112,4 @@ function getWinner() {
         return "T"
     }
 }
+
