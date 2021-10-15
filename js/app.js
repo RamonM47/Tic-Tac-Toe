@@ -72,7 +72,7 @@ function render() {
     } else if (winner === "T") {
         message.innerText = `SHAME!`
     } else {
-        message.innerText = `Congratulations ${winner === 1 ? "X" : "O"}!!!!!`
+        message.innerText = ` ${winner === 1 ? "X" : "O"} Reigns supreme!!!!!`
     }   
 }
 
