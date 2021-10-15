@@ -13,6 +13,8 @@ const winningCombos = [
 /*---------------------------- Variables (state) ----------------------------*/
 let board, turn, winner
 
+let x = 'X'
+
 /*------------------------ Cached Element References ------------------------*/
 
 const squares = document.querySelectorAll('section > div')
@@ -55,7 +57,7 @@ function render() {
         
         let cellColor
         if (cell === 1) {
-            cellColor = "blue"
+            cellColor = x
         } else if (cell === -1) {
             cellColor = "purple"
         } else if (cell === null) {
