@@ -68,11 +68,11 @@ function render() {
 
 
     if (!winner) {
-        message.innerText = `It is ${turn === 1 ? "X" : "O"}'s turn!`
+        message.innerText = `It is ${turn === 1 ? "Black" : "Orange"}'s turn!`
     } else if (winner === "T") {
         message.innerText = `SHAME!`
     } else {
-        message.innerText = ` ${winner === 1 ? "X" : "O"} Reigns supreme!!!!!`
+        message.innerText = ` ${winner === 1 ? "Black" : "Orange"} Reigns supreme!!!!!`
     }   
 }
 
@@ -112,4 +112,7 @@ function getWinner() {
         return "T"
     }
 }
+
+var src = document.getElementById("img").getAttribute("src");
+document.getElementById("source").innerHTML = src;
 
